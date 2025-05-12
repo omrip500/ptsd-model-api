@@ -61,5 +61,5 @@ def analyze():
 
 if __name__ == "__main__":
     # כדי לתמוך ברנדר צריך לקרוא את הפורט מה־ENV
-    port = int(os.environ.get("PORT", 6000))
+    port = int(os.environ.get("PORT", 5000))
     app.run(debug=False, host="0.0.0.0", port=port)
