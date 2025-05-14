@@ -3,9 +3,5 @@ services:
     name: ptsd-model-api
     env: python
     plan: free
-    buildCommand: ""
+    buildCommand: pip install -r requirements.txt
     startCommand: python main.py
-    envVars:
-      - key: FLASK_ENV
-        value: production
-    autoDeploy: true
